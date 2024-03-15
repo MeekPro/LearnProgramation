@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-inscricao.css">
+    <link rel="shortcut icon" href="imagens/download.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js"  crossorigin="anonymous"></script>
+    <title>LearnProgramation-Inscrição</title>
+</head>
+<body>
+    <div class="container">
+        <div class="buttonsForm">
+            <div class="btnColor"></div>
+            <button id="btnSignin">Entrar</button>
+            <button id="btnSignup">Inscrever-se</button>
+        </div>
+        <form id="Signin" method="post" action="ins.php">
+            <input type="text" placeholder="Nome" name="nome" required />
+            <input type="text" placeholder="Telefone ou E-mail" name="email" required />
+            <div class="divCheck">
+                <input type="checkbox" />
+                <span>Lembrar de mim</span>
+            </div>
+            <button type="submit">Entrar</button>
+            <div class="sair">
+                <a href="index.html" class="sair">Voltar para página inicial</a>
+            </div>
+            
+        </form>
+
+        <form id="Signup">
+            <input type="text" placeholder="Nome" required />
+            <input type="text" placeholder="Sobrenome" required />
+            <input type="text" placeholder="E-mail" required />
+            <div class="divCheck">
+                <input type="checkbox" required/>
+                <span>Termos e privacidade</span>
+            </div>
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </div>
+
+    <script>
+        var formSignin = document.querySelector('#Signin')
+        var formSignup = document.querySelector('#Signup')
+        var btnColor = document.querySelector('.btnColor')
+
+        document.querySelector('#btnSignin')
+        .addEventListener('click', () => {
+        formSignin.style.left = "25px"
+        formSignup.style.left = "450px"
+        btnColor.style.left = "0px"
+        })
+
+        document.querySelector('#btnSignup')
+        .addEventListener('click', () =>{
+        formSignin.style.left = "-550px"
+        formSignup.style.left = "30px"
+        btnColor.style.left = "118px"
+        })
+    </script>
+<body>
+</html>
+
+<!-- Feito pelo Meek Pro -->

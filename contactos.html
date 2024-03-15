@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>LearnProgramation-Contactos</title>
+</head>
+<body>
+    <header style="background-image: url(img/i611963.jpeg);">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><span>Learn</span>Programation</a>
+                </div>
+                <ul class="ul">
+                    <a href="index.html">Home</a>
+                    <a href="learn.html">Learn</a>
+                    <a href="tutorias.html">Tutorias</a>
+                    <a href="contactos.html">Contacts</a>
+                    <a href="inscricao.html" class="btn">Login / cadastrar</a>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+
+    <section class="home">
+        <div class="text">
+            <h1 class="learn">Contacts</h1>
+            <p>Home / Contacts</p>
+        </div>
+    </section>
+    </header>
+
+    <section class="contacto">
+        <div class="container">
+
+            <div class="titulo">
+                <h2>Para mais informações nos Contacte</h2>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.1764351424486!2d13.261361473921351!3d-8.863161090818235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f53c3cf8f965%3A0xb70cbe6738d0eb64!2sComplexo%20Escolar%20Privado%20Almeida%20Monteiro!5e0!3m2!1spt-PT!2sao!4v1689944812123!5m2!1spt-PT!2sao" width="90%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contacto-info">
+                <div class="left-side">
+                    <div>
+                    <p>Complexo Escolar Privado Almeida Monteiro 47P7+PHM, Luanda</p>
+                </div>
+
+                <div>
+                   <p>colegiokudicha@gmail.com</p>
+                </div>
+
+                <div>
+                    <p>+244 925703627</p>
+                 </div>
+
+                 <div>
+                    <p>Fornecemos também Aulas presencias</p>
+                 </div>
+                 <div>
+                    <p>Cobramos por Aulas</p>
+                 </div>
+            </div>
+
+            <div class="right-side">
+                 <form action="contacto.php" method="post">
+                    <input type="text" placeholder="Nome" name="nome" required>
+                    <input type="text" placeholder="Email" name="email" required>
+                    <input type="text" placeholder="Assunto" name="assunto">
+                    <textarea cols="30" rows="10" placeholder="Escreva a mensagem" name="mensagem" required></textarea>
+                    <button class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <footer class="footer">
+        <div class="footer-item">
+            <img src="img/footer01.png" alt="">
+        </div>
+        <div class="footer-item">
+            <h2>Design</h2>
+            <a href="#">Design para apps <br></a>
+            <a href="#">Design para sistemas <br></a>
+            <a href="#">Design para sites <br></a>
+            <a href="#">Pesquisa UX <br></a>
+
+        </div>
+        <div class="footer-item">
+            <h2>Desenvolvimento</h2>
+            <a href="#">Desenvolvimento de sistemas <br></a>
+            <a href="#">Desenvolvimento de APIs <br></a>
+            <a href="#">Desenvolvimento de apps <br></a>
+            <a href="#">Desenvolvimento Ágil</a>
+        </div>
+        <div class="footer-item">
+            <h2>Serviços</h2>
+            <a href="#">Projetos Digitais <br></a>
+            <a href="#">Experiência do usuário <br></a>
+            <a href="#">Tecnologia <br></a>
+            <a href="#">Estratégia e Pesquisa <br></a>
+        </div>
+        <div class="footer-item">
+            <img src="img/footer02.png" alt="">
+        </div>
+    </footer>
+     <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Feito pelo Meek Pro -->
